@@ -5,7 +5,7 @@ export const metadata = {
     title: 'About - Mr. Generous',
   };
 
-const page = () => {
+const Page = () => {
     return (
 
       
@@ -101,7 +101,7 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
 
 export const Metadata = {
     title: "About - Mr.Generous",
