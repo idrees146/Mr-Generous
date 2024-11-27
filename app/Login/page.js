@@ -5,12 +5,12 @@ import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
 
-const page = () => {
+const Page = () => {
 
     const { data: session } = useSession()
-
+    const router = useRouter()
     if (session) {
-        const router = useRouter()
+       
         router.push('/Organizations')
     }
 
@@ -89,7 +89,7 @@ useEffect(() => {
                                 className="  mt-5"
                             >
                                 <div className="px-6 sm:px-0 md:w-3/4 m-auto">
-                                    <button onClick={() => { signIn("github") }} type="button" class="text-white w-full  bg-black hover:bg-gray-800   font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between mr-2 mb-2">
+                                    <button onClick={() => { signIn("github") }} type="button" className="text-white w-full  bg-black hover:bg-gray-800   font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between mr-2 mb-2">
                                     <img
                                         className="max-w-[25px] filter dark:invert"
                                         src="/github.svg"
@@ -99,7 +99,7 @@ useEffect(() => {
                                 </div>
 
                                 <div className="px-6 sm:px-0 md:w-3/4 m-auto">
-                                    <button onClick={() => signIn("google")}  type="button" class="text-gray-800 w-full border-solid border-2 bg-white hover:bg-gray-300   font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between mr-2 mb-2">
+                                    <button onClick={() => signIn("google")}  type="button" className="text-gray-800 w-full border-solid border-2 bg-white hover:bg-gray-300   font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between mr-2 mb-2">
 
                                    <img src="/google.svg" width={25} alt="" />
                                     
@@ -148,4 +148,4 @@ useEffect(() => {
     )
 }
 
-export default page
+export default Page

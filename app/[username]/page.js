@@ -163,8 +163,8 @@ const Username = ({ params }) => {
                                     />
                                     <span>
                                         {payment.name} donated{" "}
-                                        <span className="font-bold">${payment.amount}</span> with a message "
-                                        {payment.message}"
+                                        <span className="font-bold">${payment.amount}</span> with a message &quot;
+                                        {payment.message}&quot;
                                     </span>
                                 </li>
                             ))}

@@ -30,7 +30,7 @@ const page = () => {
 
                         <h2 className='text-xl font-bold text-center '>Alkhidmat Foundation</h2>
 
-                        <Link href={"/Alkhidmat Foundation"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
+                        <Link href={"/Alkhidmat Foundation"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
 
                     </div>
 
@@ -51,7 +51,7 @@ const page = () => {
                     <h2 className='text-xl font-bold text-center '>World Health organization</h2>
 
 
-                    <Link href={"/World Health organization"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
+                    <Link href={"/World Health organization"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
 
                 </div>
 
@@ -69,7 +69,7 @@ const page = () => {
 
                     <h2 className='text-xl font-bold text-center '>Eidhi Foundation</h2>
 
-                    <Link href={"/Eidhi Foundation"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
+                    <Link href={"/Eidhi Foundation"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
 
                 </div>
 
@@ -95,7 +95,7 @@ const page = () => {
 
                     <h2 className='text-xl font-bold text-center '>Pak Aid Welfare Trust</h2>
 
-                    <Link href={"/Pak Aid Welfare Trust"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
+                    <Link href={"/Pak Aid Welfare Trust"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
 
                 </div>
 
@@ -113,7 +113,7 @@ const page = () => {
 
                     <h2 className='text-xl font-bold text-center '>Chipha Welfare</h2>
 
-                    <Link href={"/Chipha Welfare"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
+                    <Link href={"/Chipha Welfare"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
 
                 </div>
 
@@ -131,7 +131,7 @@ const page = () => {
 
                     <h2 className='text-xl font-bold text-center '>Shaukat Khanum Hospital</h2>
 
-                    <Link href={"/Shaukat Khanum Hospital"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
+                    <Link href={"/Shaukat Khanum Hospital"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Donate</button> </Link>
 
                 </div>
 
