@@ -22,9 +22,9 @@ export default function Home() {
 
 
 
-         <Link href={"/Organizations"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Now</button> </Link>
+         <Link href={"/Organizations"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Start Now</button> </Link>
 
-        <Link href={"/About"} >  <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read More</button> </Link>
+        <Link href={"/About"} >  <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Read More</button> </Link>
 
         </div>
 
@@ -51,7 +51,7 @@ export default function Home() {
             <p className="font-bold">Fund Yourself</p>
             <p className=" text-center">People are available to help you</p>
 
-            <Link href={"/About"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Read More</button> </Link>
+            <Link href={"/About"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Read More</button> </Link>
 
           </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
             <p className="font-bold">Fund Yourself</p>
             <p className=" text-center">People are available to help you</p>
 
-            <Link href={"/About"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Read More</button> </Link>
+            <Link href={"/About"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Read More</button> </Link>
 
           </div>
 
@@ -71,7 +71,7 @@ export default function Home() {
             <p className="font-bold">People Want to Help</p>
             <p className=" text-center">People are available to help you</p>
 
-            <Link href={"/About"}> <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Read More</button> </Link>
+            <Link href={"/About"}> <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4  font-medium rounded-lg text-sm px-2 py-1 text-center me-2 mb-2">Read More</button> </Link>
 
           </div>
         </div>

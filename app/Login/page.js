@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
 
-const Page = () => {
+const page = () => {
 
     const { data: session } = useSession()
     const router = useRouter()
@@ -148,4 +148,4 @@ useEffect(() => {
     )
 }
 
-export default Page
+export default page
