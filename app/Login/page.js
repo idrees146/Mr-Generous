@@ -4,21 +4,25 @@ import { useSession, signIn, signOut } from "next-auth/react"
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
+const { data: session } = useSession()
+    const router = useRouter()
 
+
+    useEffect(() => {
+        document.title = "Login - Mr. Generous"
+      
+      
+      }, [])
+      
 const page = () => {
 
-    const { data: session } = useSession()
-    const router = useRouter()
+    
     if (session) {
        
         router.push('/Organizations')
     }
 
-useEffect(() => {
-  document.title = "Login - Mr. Generous"
 
-
-}, [])
 
 
 
