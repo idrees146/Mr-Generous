@@ -21,19 +21,8 @@ const Username = ({ params }) => {
     }, [user]);
 
     // Fetch payments from the database on component mount
-    useEffect(() => {
-        const fetchPayments = async () => {
-            try {
-                const response = await fetch("/api/payment"); // API call to fetch payments
-                const data = await response.json();
-                setPayments(data); // Update state with fetched data
-            } catch (error) {
-                console.error("Error fetching payments:", error);
-            }
-        };
-
-        fetchPayments();
-    }, []);
+  
+ 
 
     const handlePayment = async () => {
         if (!session) {
@@ -46,27 +35,7 @@ const Username = ({ params }) => {
             return;
         }
 
-        const paymentData = { name, message, amount };
-
-        try {
-            const response = await fetch("/api/payment", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(paymentData),
-            });
-
-            if (response.ok) {
-                toast.success(`Thanks! Your donation is paid to ${user}`);
-                const newPayment = await response.json(); // Get the new payment
-                setPayments((prevPayments) => [newPayment, ...prevPayments]); // Update payments
-            } else {
-                toast.error("Something went wrong, please try again later.");
-            }
-        } catch (error) {
-            toast.error("Something went wrong, please try again later.");
-        }
+        
     };
 
     return (
@@ -146,31 +115,7 @@ const Username = ({ params }) => {
 
 
 
-                    {/* Supporters List */}
-                    <div className="supporters w-[90vw] text-justify md:w-1/2 bg-slate-900 p-6 h-96 rounded-lg">
-                        <h2 className="mb-5 text-2xl font-bold">Supporters</h2>
-                        <ul id="support" className="mx-4 text-lg overflow-scroll overflow-x-hidden h-72">
-                            {/* Hardcoded example */}
-
-                            {/* Dynamic rendering from state */}
-                            {payments.map((payment) => (
-                                <li key={payment._id} className="flex gap-4 items-center my-4 hover:cursor-pointer">
-                                    <img
-                                        className="rounded-full"
-                                        width={33}
-                                        src="user.gif" // You can replace this with dynamic image if needed
-                                        alt="user avatar"
-                                    />
-                                    <span>
-                                        {payment.name} donated{" "}
-                                        <span className="font-bold">${payment.amount}</span> with a message &quot;
-                                        {payment.message}&quot;
-                                    </span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
+                   
 
                 </div>
             </div>
