@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.item:hover{
+
+   box-shadow: 2px 2px 2px 2px  rgb(186, 206, 226);
+   cursor: pointer;
+ 
+}
+
+.item{
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
