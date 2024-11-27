@@ -4,21 +4,21 @@ import { useSession, signIn, signOut } from "next-auth/react"
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
-const { data: session } = useSession()
+
+
+const Page = () => {
+    const { data: session } = useSession()
     const router = useRouter()
 
 
     useEffect(() => {
         document.title = "Login - Mr. Generous"
-      
-      
-      }, [])
-      
-const page = () => {
 
-    
+
+    }, [])
+
     if (session) {
-       
+
         router.push('/Organizations')
     }
 
@@ -83,8 +83,8 @@ const page = () => {
                             </form>
                             <div className="flex flex-col mt-4 items-center justify-center text-sm">
                                 <h3 className="text-black">
-                                   Or Directly Sign in/Sign up through your Below Accounts
-                                    
+                                    Or Directly Sign in/Sign up through your Below Accounts
+
                                 </h3>
                             </div>
 
@@ -94,23 +94,23 @@ const page = () => {
                             >
                                 <div className="px-6 sm:px-0 md:w-3/4 m-auto">
                                     <button onClick={() => { signIn("github") }} type="button" className="text-white w-full  bg-black hover:bg-gray-800   font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between mr-2 mb-2">
-                                    <img
-                                        className="max-w-[25px] filter dark:invert"
-                                        src="/github.svg"
-                                        alt="Github"
-                                        width={25}
-                                    />Continue with GitHub<div></div></button>
+                                        <img
+                                            className="max-w-[25px] filter dark:invert"
+                                            src="/github.svg"
+                                            alt="Github"
+                                            width={25}
+                                        />Continue with GitHub<div></div></button>
                                 </div>
 
                                 <div className="px-6 sm:px-0 md:w-3/4 m-auto">
-                                    <button onClick={() => signIn("google")}  type="button" className="text-gray-800 w-full border-solid border-2 bg-white hover:bg-gray-300   font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between mr-2 mb-2">
+                                    <button onClick={() => signIn("google")} type="button" className="text-gray-800 w-full border-solid border-2 bg-white hover:bg-gray-300   font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center justify-between mr-2 mb-2">
 
-                                   <img src="/google.svg" width={25} alt="" />
-                                    
-                                    Continue with Google<div></div></button>
+                                        <img src="/google.svg" width={25} alt="" />
+
+                                        Continue with Google<div></div></button>
                                 </div>
 
-                               
+
 
                             </div>
 
@@ -152,4 +152,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
