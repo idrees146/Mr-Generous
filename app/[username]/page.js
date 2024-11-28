@@ -33,6 +33,8 @@ const Username = ({ params }) => {
         if (!name || !message || !amount) {
             toast.error("Please fill in all fields.");
             return;
+        }else{
+            toast.success(`Thanks! Your donation is paid to ${user}`);
         }
 
         
@@ -92,7 +94,7 @@ const Username = ({ params }) => {
                                 className="w-full p-2 rounded-lg bg-slate-800"
                             />
                             <ToastContainer
-                                position="bottom-left"
+                                position="top-right"
                                 autoClose={3000}
                                 hideProgressBar={false}
                                 newestOnTop={false}
